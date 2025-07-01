@@ -1,0 +1,74 @@
+[
+  {
+    "timestamp": "2025-07-01T07:00:00.000Z",
+    "applicationName": "istio-system",
+    "subsystemName": "pilot",
+    "severity": "INFO",
+    "text": "Generic log message for pilot at 2025-07-01T07:00:00.000Z",
+    "json": {
+      "kubernetes": {
+        "namespace_name": "istio-system",
+        "pod_name": "istio-proxy-nscp3",
+        "container_name": "pilot",
+        "container_id": "containerd://cuqorcx2vefp342imr7ksj93ood2oly04qd0mmlsvaxt0b8i45upbukexza252fc",
+        "host": "fargate-ip-172-31-45-128.us-west-2.compute.internal",
+        "labels": {
+          "app": "istio-system",
+          "version": "v2.5.7",
+          "environment": "staging"
+        }
+      },
+      "log": "Generic log message for pilot at 2025-07-01T07:00:00.000Z",
+      "stream": "stdout",
+      "time": "2025-07-01T07:00:00.000000Z"
+    }
+  },
+  {
+    "timestamp": "2025-07-01T07:00:28.000Z",
+    "applicationName": "user-service",
+    "subsystemName": "app",
+    "severity": "ERROR",
+    "text": "{\"level\":\"error\",\"msg\":\"Timeout occurred\",\"request_id\":\"req-8603\",\"timeout_ms\":16192}",
+    "json": {
+      "kubernetes": {
+        "namespace_name": "user-service",
+        "pod_name": "user-service-deployment-5f8b9c7d6e-gm5zb",
+        "container_name": "app",
+        "container_id": "containerd://q2v38vncr7xff5l5263pkagchhcye1hx7l0h3qxoth62oh17jtyao54ltqrspgin",
+        "host": "fargate-ip-172-31-45-124.us-west-2.compute.internal",
+        "labels": {
+          "app": "user-service",
+          "version": "v3.0.4",
+          "environment": "development"
+        }
+      },
+      "log": "{\"level\":\"error\",\"msg\":\"Timeout occurred\",\"request_id\":\"req-8603\",\"timeout_ms\":16192}",
+      "stream": "stderr",
+      "time": "2025-07-01T07:00:28.000000Z"
+    }
+  },
+  {
+    "timestamp": "2025-07-01T07:01:37.000Z",
+    "applicationName": "payment-service",
+    "subsystemName": "app",
+    "severity": "ERROR",
+    "text": "{\"level\":\"error\",\"msg\":\"Database connection failed\",\"error\":\"dial tcp 172.31.45.200:5432: connect: connection refused\",\"retry_count\":3}",
+    "json": {
+      "kubernetes": {
+        "namespace_name": "payment-service",
+        "pod_name": "payment-service-deployment-8e9f0a1b2c-sb429",
+        "container_name": "app",
+        "container_id": "containerd://35vl5qa81dbg55t0pnb3apli1ne0g2f85e6nguk677fqfe8enld5kf81xoaeol4x",
+        "host": "fargate-ip-172-31-45-127.us-west-2.compute.internal",
+        "labels": {
+          "app": "payment-service",
+          "version": "v3.7.1",
+          "environment": "production"
+        }
+      },
+      "log": "{\"level\":\"error\",\"msg\":\"Database connection failed\",\"error\":\"dial tcp 172.31.45.200:5432: connect: connection refused\",\"retry_count\":3}",
+      "stream": "stderr",
+      "time": "2025-07-01T07:01:37.000000Z"
+    }
+  }
+]
